@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style> 
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+
+        /* Split page into left and right side */
+        .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            overflow-x: hidden;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            right: 0;
+            margin: 2%;
+        }
+
+        /* Use flex boxes to make columns */
+        .flex-parent-element {
+            display: flex;
+            width: 100%;
+        }
+        .flex-child-element {
+            flex: 1;
+            margin: 0px;
+        }
+        .flex-child-element:first-child {
+            margin-right: 20px;
+        }
+
+        h1 {
+            background-color: #5d1725;
+            color: white;
+        }
+        body{
+            font-size: 120%;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <title>
+        KJ's Digital Resume
+    </title>
+    <head>
+        <center>
+            <h1>
+                KJ's Digital Resume
+            </h1>
+        </center>
+    </head>
+    <body>
+        <div class="split left">
+            <img src="/careerexpo.png" alt="kjb-headshot" style="height:auto; width:auto; max-height: 98%; max-width: 100%;">
+        </div>
+    
+        <div class="split right" style="padding-right: 2.5%;">
+            <center>
+                <h2>
+                    Karl John Butler, Jr.
+                </h2>
+                <h4>
+                    <pre>kjbutler385@gmail.com  •   <a href="https://www.linkedin.com/in/kj-butler/">linkedin.com/in/kj-butler/</a></pre>
+                </h4>
+            </center>
+
+            <br>
+
+            <p>
+                <h3>Education</h3>
+                <div class="flex-parent-element">
+                    <div class="flex-child-element">
+                        Mississippi State University
+                    </div>
+                    <div class="flex-child-element" style="text-align: right;">
+                        December 2024
+                    </div>
+                </div>
+                <ul>
+                <li>Bachelor's of Science in Computer Engineering</li>
+                <li>Minor in Mathematics</li>
+                </ul>
+            </p>
+
+            <br>
+            
+            <p>
+                <h3>Skills</h3>
+                <div class="flex-parent-element">
+                    <div class="flex-child-element">
+                        <ul>
+                        <li>Object-Oriented Programming<ul>
+                            <li>C/C++</li>
+                        </ul></li>
+                        <li>MATLAB & Simulink</li>
+                        <li>Soldering</li>
+                        </ul>
+                    </div>
+                    <div class="flex-child-element">
+                        <ul>
+                        <li>Python Programming<ul>
+                            <li>OpenCV</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                        </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </p>
+            
+            <br>
+
+            <p>
+                <h3> Work Experience</h3>
+                <div class="flex-parent-element">
+                    <div class="flex-child-element">
+                        <h4>Mississippi Band of Choctaw Indians - YOP</h4>
+                    </div>
+                    <div class="flex-child-element" style="text-align: right;">
+                        June 2023 - July 2023
+                    </div>
+                </div>
+                <em><strong>YOP Monitor | Choctaw, MS</strong></em> <br>
+                Provided high school students with opportunities to work, build connections, and learn more about the Choctaw culture. 
+                Logged working hours, delivered payroll checks, and supervised summer employees.
+                <ul>
+                    <li>Conducted mock interviews and helped teen workers make a résumé</li>
+                    <li>Taught teens about budgeting, salaries, and taxes through a financial literacy workshop.</li>
+                </ul>
+
+                <br>
+
+                <div class="flex-parent-element">
+                    <div class="flex-child-element">
+                        <h4>Mississippi State University - ECE department</h4>
+                    </div>
+                    <div class="flex-child-element" style="text-align: right;">
+                        December 2022 - May 2023
+                    </div>
+                </div>
+                <em><strong>Undergraduate Research Assistant | Starkville, MS</strong></em> <br>
+                Used Open AI Cellular Git repository to deploy client-server based virtual radio networks in Linux environment. 
+                Researched O-RAN architecture and debugged performance monitoring xApp on 5G ZMQ network.
+                <ul>
+                    <li>Resolved problem preventing KPI Monitoring xApp from proper deployment.</li>
+                </ul>
+
+                <br>
+
+                <div class="flex-parent-element">
+                    <div class="flex-child-element">
+                        <h4>Mississippi Band of Choctaw Indians - IT</h4>
+                    </div>
+                    <div class="flex-child-element" style="text-align: right;">
+                        July 2022 - August 2022
+                    </div>
+                </div>
+                <em><strong>IT Intern | Choctaw, MS</strong></em> <br>
+                Provided computer maintenance and network support for Tribal employees in various departments. 
+                Shadowed Tribal IT staff and learned about networking and cybersecurity.
+                <ul>
+                    <li>Diagnosed damaged fiber cable and implemented fix alongside IT professionals and engineers.</li>
+                </ul>
+            </p>
+        </div>
+    </body>  
+</html>
